@@ -5,8 +5,11 @@
 [![Administrative Level](https://img.shields.io/badge/Level-Province%2FWard-orange.svg)](.)
 [![GitHub Pages](https://img.shields.io/badge/Demo-GitHub%20Pages-brightgreen.svg)](https://vietmap-company.github.io/vietnam_administrative_address/)
 
-[new admin boundary](./images/new_boundary.png)
-🌐 **Live Demo**: [https://vietmap-company.github.io/vietnam_administrative_address/](https://vietmap-company.github.io/vietnam_administrative_address/)
+# Preview image
+![Preview](./images/new_boundary.png)
+
+
+🌐 **Live Demo**: [Vietmap pick address live demo](https://vietmap-company.github.io/vietnam_administrative_address/)
 
 Dữ liệu hành chính Việt Nam đầy đủ với format JSON chuẩn, bao gồm thông tin tỉnh/thành phố và xã/phường/thị trấn.
 
