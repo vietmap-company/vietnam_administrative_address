@@ -5,7 +5,7 @@
 [![Administrative Level](https://img.shields.io/badge/Level-Province%2FWard-orange.svg)](.)
 [![GitHub Pages](https://img.shields.io/badge/Demo-GitHub%20Pages-brightgreen.svg)](https://vietmap-company.github.io/vietnam_administrative_address/)
 
-# Preview image
+
 ![Preview](./images/new_boundary.png)
 
 
