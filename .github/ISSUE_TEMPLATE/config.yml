@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 VietMap Support (Zalo)
+    url: https://zalo.me/vietmapmapsapi
+    about: Liên hệ trực tiếp với team VietMap qua Zalo OA
+  - name: 📧 Email Support
+    url: mailto:maps.info@vietmap.vn
+    about: Gửi email cho team technical support
+  - name: 🌐 VietMap Website
+    url: https://maps.vietmap.vn
+    about: Tìm hiểu thêm về các sản phẩm và dịch vụ VietMap
+  - name: 📚 Address Migration API Docs
+    url: https://maps.vietmap.vn/docs/migrate-address/migrate-address/
+    about: Tài liệu API cho migration địa chỉ hành chính
