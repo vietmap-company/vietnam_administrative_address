@@ -1,0 +1,9 @@
+/node_modules/
+/src/
+*.xlsx
+*.xls
+*.csv
+package*.json
+tsconfig.json
+province_sample.json
+ward_sample.json

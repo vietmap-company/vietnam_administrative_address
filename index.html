@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vietnam Administrative Address Picker - VietMap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --vietmap-primary: #2c5aa0;
+            --vietmap-secondary: #1e3d6b;
+            --vietmap-accent: #ff6b35;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin-top: 50px;
+        }
+        
+        .card {
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border: none;
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.9);
+        }
+        
+        .card-header {
+            background: var(--vietmap-primary);
+            color: white;
+            border-radius: 15px 15px 0 0 !important;
+            padding: 20px;
+            border: none;
+        }
+        
+        .form-select {
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            padding: 12px 15px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            display: none; /* Hide default select */
+        }
+        
+        .form-select:focus {
+            border-color: var(--vietmap-primary);
+            box-shadow: 0 0 0 0.2rem rgba(44, 90, 160, 0.25);
+        }
+        
+        /* Custom Searchable Dropdown */
+        .custom-dropdown {
+            position: relative;
+        }
+        
+        .dropdown-input {
+            border-radius: 10px;
+            border: 2px solid #e9ecef;
+            padding: 12px 45px 12px 15px;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            width: 100%;
+            background: white;
+            cursor: pointer;
+        }
+        
+        .dropdown-input:focus {
+            border-color: var(--vietmap-primary);
+            box-shadow: 0 0 0 0.2rem rgba(44, 90, 160, 0.25);
+            outline: none;
+        }
+        
+        .dropdown-input.open {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-color: transparent;
+        }
+        
+        .dropdown-arrow {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: #6c757d;
+            pointer-events: none;
+            transition: transform 0.3s ease;
+        }
+        
+        .dropdown-arrow.open {
+            transform: translateY(-50%) rotate(180deg);
+        }
+        
+        .dropdown-clear {
+            position: absolute;
+            right: 40px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            color: #6c757d;
+            cursor: pointer;
+            padding: 0;
+            width: 20px;
+            height: 20px;
+            display: none;
+            z-index: 2;
+        }
+        
+        .dropdown-clear:hover {
+            color: var(--vietmap-accent);
+        }
+        
+        .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: white;
+            border: 2px solid #e9ecef;
+            border-top: 1px solid #dee2e6;
+            border-radius: 0 0 10px 10px;
+            max-height: 400px;
+            overflow: hidden;
+            z-index: 1000;
+            display: none;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .dropdown-menu.show {
+            display: block;
+        }
+        
+        .dropdown-search {
+            padding: 10px;
+            border-bottom: 1px solid #e9ecef;
+            background: #f8f9fa;
+        }
+        
+        .dropdown-search input {
+            width: 100%;
+            padding: 8px 12px;
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            font-size: 14px;
+            outline: none;
+        }
+        
+        .dropdown-search input:focus {
+            border-color: var(--vietmap-primary);
+            box-shadow: 0 0 0 0.1rem rgba(44, 90, 160, 0.25);
+        }
+        
+        .dropdown-options {
+            max-height: 320px;
+            overflow-y: auto;
+        }
+        
+        .dropdown-option {
+            padding: 12px 15px;
+            cursor: pointer;
+            border-bottom: 1px solid #f8f9fa;
+            transition: background-color 0.2s ease;
+        }
+        
+        .dropdown-option:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .dropdown-option:last-child {
+            border-bottom: none;
+        }
+        
+        .dropdown-option.selected {
+            background-color: var(--vietmap-primary);
+            color: white;
+        }
+        
+        .dropdown-option.highlighted {
+            background-color: #e7f3ff;
+        }
+        
+        .dropdown-option .option-title {
+            font-weight: 500;
+            display: block;
+        }
+        
+        .dropdown-option .option-subtitle {
+            font-size: 12px;
+            color: #6c757d;
+            margin-top: 2px;
+        }
+        
+        .dropdown-option.selected .option-subtitle {
+            color: rgba(255,255,255,0.8);
+        }
+        
+        .no-results {
+            padding: 20px;
+            text-align: center;
+            color: #6c757d;
+            font-style: italic;
+        }
+        
+        /* Download Buttons */
+        .download-section {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #e9ecef;
+        }
+        
+        .download-btn {
+            background: linear-gradient(45deg, var(--vietmap-primary), var(--vietmap-secondary));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 12px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px;
+            box-shadow: 0 2px 4px rgba(44, 90, 160, 0.2);
+        }
+        
+        .download-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(44, 90, 160, 0.3);
+            color: white;
+        }
+        
+        .download-btn:active {
+            transform: translateY(0);
+        }
+        
+        .download-btn i {
+            margin-right: 8px;
+        }
+        
+        .download-info {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 15px;
+            margin-top: 15px;
+            border-left: 4px solid var(--vietmap-accent);
+        }
+        
+        .download-info h6 {
+            color: var(--vietmap-secondary);
+            margin-bottom: 10px;
+        }
+        
+        .download-info ul {
+            margin-bottom: 0;
+            padding-left: 20px;
+        }
+        
+        .download-info li {
+            color: #6c757d;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        
+        .form-label {
+            font-weight: 600;
+            color: var(--vietmap-secondary);
+            margin-bottom: 8px;
+        }
+        
+        .result-card {
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            border-left: 4px solid var(--vietmap-accent);
+        }
+        
+        .result-item {
+            margin-bottom: 10px;
+            padding: 8px 0;
+        }
+        
+        .result-label {
+            font-weight: 600;
+            color: var(--vietmap-secondary);
+            display: inline-block;
+            width: 150px;
+        }
+        
+        .result-value {
+            color: #495057;
+            font-family: 'Courier New', monospace;
+            background: #fff;
+            padding: 4px 8px;
+            border-radius: 4px;
+            border: 1px solid #dee2e6;
+        }
+        
+        .badge-custom {
+            background: var(--vietmap-accent);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: white;
+            padding: 20px;
+        }
+        
+        .footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .spinner-border {
+            color: var(--vietmap-primary);
+        }
+        
+        @media (max-width: 576px) {
+            .container {
+                margin-top: 20px;
+                padding: 0 15px;
+            }
+            
+            .result-label {
+                width: 100%;
+                display: block;
+            }
+            
+            .result-value {
+                display: block;
+                margin-top: 5px;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="mb-0">
+                    <i class="bi bi-geo-alt-fill me-2"></i>
+                    Vietnam Administrative Address Picker
+                </h3>
+                <p class="mb-0 mt-2 opacity-75">
+                    <i class="bi bi-info-circle me-1"></i>
+                    Powered by VietMap - Vietnam's Leading Provider of Mapping Solutions
+                </p>
+            </div>
+            <div class="card-body p-4">
+                <div class="loading">
+                    <div class="spinner-border" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <p class="mt-2 text-muted">Đang tải dữ liệu...</p>
+                </div>
+                
+                <div id="addressForm" style="display: none;">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="provinceDropdown" class="form-label">
+                                <i class="bi bi-building me-1"></i>
+                                Tỉnh/Thành phố
+                            </label>
+                            <div class="custom-dropdown" id="provinceDropdown">
+                                <input 
+                                    type="text" 
+                                    class="dropdown-input" 
+                                    placeholder="-- Chọn Tỉnh/Thành phố --"
+                                    readonly
+                                >
+                                <button type="button" class="dropdown-clear">
+                                    <i class="bi bi-x"></i>
+                                </button>
+                                <i class="bi bi-chevron-down dropdown-arrow"></i>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-search">
+                                        <input type="text" placeholder="Tìm kiếm tỉnh/thành phố...">
+                                    </div>
+                                    <div class="dropdown-options"></div>
+                                </div>
+                            </div>
+                            <!-- Hidden original select for form compatibility -->
+                            <select class="form-select" id="provinceSelect">
+                                <option value="">-- Chọn Tỉnh/Thành phố --</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="wardDropdown" class="form-label">
+                                <i class="bi bi-house me-1"></i>
+                                Xã/Phường/Thị trấn
+                            </label>
+                            <div class="custom-dropdown" id="wardDropdown">
+                                <input 
+                                    type="text" 
+                                    class="dropdown-input" 
+                                    placeholder="-- Chọn Xã/Phường/Thị trấn --"
+                                    readonly
+                                    disabled
+                                >
+                                <button type="button" class="dropdown-clear">
+                                    <i class="bi bi-x"></i>
+                                </button>
+                                <i class="bi bi-chevron-down dropdown-arrow"></i>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-search">
+                                        <input type="text" placeholder="Tìm kiếm xã/phường/thị trấn...">
+                                    </div>
+                                    <div class="dropdown-options"></div>
+                                </div>
+                            </div>
+                            <!-- Hidden original select for form compatibility -->
+                            <select class="form-select" id="wardSelect" disabled>
+                                <option value="">-- Chọn Xã/Phường/Thị trấn --</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="selectedResult" class="result-card" style="display: none;">
+                                <h5 class="text-primary mb-3">
+                                    <i class="bi bi-check-circle-fill me-2"></i>
+                                    Thông tin địa chỉ đã chọn
+                                </h5>
+                                <div id="resultContent"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Download Section -->
+                    <div class="download-section">
+                        <div class="row">
+                            <div class="col-12 text-center">
+                                <h5 class="mb-3">
+                                    <i class="bi bi-download me-2"></i>
+                                    Tải xuống dữ liệu JSON
+                                </h5>
+                                <div class="mb-3">
+                                    <button type="button" id="downloadProvince" class="download-btn">
+                                        <i class="bi bi-file-earmark-code"></i>
+                                        Tải Province.json
+                                    </button>
+                                    <button type="button" id="downloadWard" class="download-btn">
+                                        <i class="bi bi-file-earmark-code"></i>
+                                        Tải Ward.json
+                                    </button>
+                                </div>
+                                <div class="download-info">
+                                    <h6><i class="bi bi-info-circle me-1"></i>Thông tin file:</h6>
+                                    <ul class="text-start">
+                                        <li><strong>province.json:</strong> Chứa <span id="provinceCount">--</span> tỉnh/thành phố</li>
+                                        <li><strong>ward.json:</strong> Chứa <span id="wardCount">--</span> xã/phường/thị trấn</li>
+                                        <li><strong>Format:</strong> JSON với đầy đủ thông tin name, slug, type, path</li>
+                                        <li><strong>License:</strong> VietMap Administrative Data License</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>
+                <strong>VietMap Administrative Data</strong> | 
+                <a href="https://maps.vietmap.vn" target="_blank">
+                    <i class="bi bi-globe me-1"></i>
+                    VietMap Solutions
+                </a> | 
+                <a href="https://zalo.me/vietmapmapsapi" target="_blank">
+                    <i class="bi bi-chat-dots me-1"></i>
+                    Zalo OA
+                </a> | 
+                <a href="mailto:maps.info@vietmap.vn">
+                    <i class="bi bi-envelope me-1"></i>
+                    Email Support
+                </a>
+            </p>
+            <p class="small opacity-75 mt-2">
+                Owned by VietMap – Vietnam's Leading Provider of Mapping Solutions
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        let provincesData = {};
+        let wardsData = {};
+        let allProvinces = [];
+        let allWards = [];
+
+        // Custom Dropdown Class
+        class CustomDropdown {
+            constructor(element, options = {}) {
+                this.element = element;
+                this.input = element.querySelector('.dropdown-input');
+                this.arrow = element.querySelector('.dropdown-arrow');
+                this.clearBtn = element.querySelector('.dropdown-clear');
+                this.menu = element.querySelector('.dropdown-menu');
+                this.searchInput = element.querySelector('.dropdown-search input');
+                this.optionsContainer = element.querySelector('.dropdown-options');
+                
+                this.data = [];
+                this.filteredData = [];
+                this.selectedItem = null;
+                this.isOpen = false;
+                this.disabled = options.disabled || false;
+                
+                this.onSelect = options.onSelect || (() => {});
+                this.onClear = options.onClear || (() => {});
+                
+                this.init();
+            }
+            
+            init() {
+                // Toggle dropdown on input click
+                this.input.addEventListener('click', () => {
+                    if (!this.disabled) {
+                        this.toggle();
+                    }
+                });
+                
+                // Clear selection
+                this.clearBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    this.clear();
+                });
+                
+                // Search functionality
+                this.searchInput.addEventListener('input', (e) => {
+                    this.filter(e.target.value);
+                });
+                
+                // Close on outside click
+                document.addEventListener('click', (e) => {
+                    if (!this.element.contains(e.target)) {
+                        this.close();
+                    }
+                });
+                
+                // Prevent search input from closing dropdown
+                this.searchInput.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                });
+            }
+            
+            setData(data) {
+                this.data = data;
+                this.filteredData = [...data];
+                this.renderOptions();
+            }
+            
+            filter(query) {
+                const lowerQuery = query.toLowerCase();
+                this.filteredData = this.data.filter(item => 
+                    item.name.toLowerCase().includes(lowerQuery) ||
+                    item.name_with_type.toLowerCase().includes(lowerQuery) ||
+                    item.slug.includes(lowerQuery)
+                );
+                this.renderOptions();
+            }
+            
+            renderOptions() {
+                if (this.filteredData.length === 0) {
+                    this.optionsContainer.innerHTML = '<div class="no-results">Không tìm thấy kết quả</div>';
+                    return;
+                }
+                
+                this.optionsContainer.innerHTML = this.filteredData.map(item => `
+                    <div class="dropdown-option" data-value="${item.code}">
+                        <span class="option-title">${item.name_with_type}</span>
+                        <span class="option-subtitle">${item.slug}</span>
+                    </div>
+                `).join('');
+                
+                // Add click handlers
+                this.optionsContainer.querySelectorAll('.dropdown-option').forEach(option => {
+                    option.addEventListener('click', () => {
+                        const value = option.dataset.value;
+                        const item = this.filteredData.find(i => i.code === value);
+                        this.select(item);
+                    });
+                });
+            }
+            
+            select(item) {
+                this.selectedItem = item;
+                this.input.value = item.name_with_type;
+                this.clearBtn.style.display = 'block';
+                this.close();
+                this.onSelect(item);
+            }
+            
+            clear() {
+                this.selectedItem = null;
+                this.input.value = '';
+                this.clearBtn.style.display = 'none';
+                this.searchInput.value = '';
+                this.filteredData = [...this.data];
+                this.renderOptions();
+                this.onClear();
+            }
+            
+            toggle() {
+                if (this.isOpen) {
+                    this.close();
+                } else {
+                    this.open();
+                }
+            }
+            
+            open() {
+                if (this.disabled) return;
+                
+                this.isOpen = true;
+                this.menu.classList.add('show');
+                this.input.classList.add('open');
+                this.arrow.classList.add('open');
+                this.searchInput.focus();
+                this.renderOptions();
+            }
+            
+            close() {
+                this.isOpen = false;
+                this.menu.classList.remove('show');
+                this.input.classList.remove('open');
+                this.arrow.classList.remove('open');
+                this.searchInput.value = '';
+                this.filteredData = [...this.data];
+            }
+            
+            enable() {
+                this.disabled = false;
+                this.input.disabled = false;
+                this.input.placeholder = this.input.placeholder.replace('Chọn tỉnh/thành phố trước...', 'Tìm kiếm xã/phường/thị trấn...');
+            }
+            
+            disable() {
+                this.disabled = true;
+                this.input.disabled = true;
+                this.clear();
+                this.close();
+            }
+        }
+
+        // Initialize dropdowns
+        let provinceDropdown, wardDropdown;
+
+        // Hiển thị loading
+        function showLoading() {
+            document.querySelector('.loading').style.display = 'block';
+            document.getElementById('addressForm').style.display = 'none';
+        }
+
+        // Ẩn loading
+        function hideLoading() {
+            document.querySelector('.loading').style.display = 'none';
+            document.getElementById('addressForm').style.display = 'block';
+        }
+
+        // Load dữ liệu JSON
+        async function loadData() {
+            try {
+                showLoading();
+                
+                // Load provinces data
+                const provincesResponse = await fetch('./province.json');
+                if (!provincesResponse.ok) {
+                    throw new Error('Không thể tải dữ liệu tỉnh/thành phố');
+                }
+                provincesData = await provincesResponse.json();
+                
+                // Load wards data
+                const wardsResponse = await fetch('./ward.json');
+                if (!wardsResponse.ok) {
+                    throw new Error('Không thể tải dữ liệu xã/phường');
+                }
+                wardsData = await wardsResponse.json();
+                
+                // Prepare data
+                allProvinces = Object.entries(provincesData).map(([code, data]) => ({
+                    code,
+                    ...data
+                })).sort((a, b) => a.name.localeCompare(b.name, 'vi', { numeric: true }));
+                
+                allWards = Object.entries(wardsData).map(([code, data]) => ({
+                    code,
+                    ...data
+                }));
+                
+                initializeDropdowns();
+                hideLoading();
+                
+                // Update download info
+                updateDownloadInfo();
+                
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.querySelector('.loading').innerHTML = `
+                    <div class="alert alert-danger">
+                        <i class="bi bi-exclamation-triangle me-2"></i>
+                        <strong>Lỗi:</strong> ${error.message}
+                        <br><small class="mt-2 d-block">
+                            Vui lòng đảm bảo file province.json và ward.json tồn tại trong cùng thư mục.
+                        </small>
+                    </div>
+                `;
+            }
+        }
+
+        // Initialize custom dropdowns
+        function initializeDropdowns() {
+            // Province dropdown
+            provinceDropdown = new CustomDropdown(document.getElementById('provinceDropdown'), {
+                onSelect: (province) => {
+                    // Update hidden select for compatibility
+                    const hiddenSelect = document.getElementById('provinceSelect');
+                    hiddenSelect.value = province.code;
+                    
+                    // Enable ward dropdown and load wards
+                    wardDropdown.enable();
+                    const provinceWards = allWards.filter(ward => ward.parent_code === province.code)
+                        .sort((a, b) => a.name.localeCompare(b.name, 'vi', { numeric: true }));
+                    wardDropdown.setData(provinceWards);
+                    
+                    // Clear ward selection
+                    wardDropdown.clear();
+                    
+                    // Update results
+                    displayResult(province);
+                },
+                onClear: () => {
+                    document.getElementById('provinceSelect').value = '';
+                    wardDropdown.disable();
+                    wardDropdown.input.placeholder = '-- Chọn tỉnh/thành phố trước --';
+                    document.getElementById('selectedResult').style.display = 'none';
+                }
+            });
+            
+            // Ward dropdown
+            wardDropdown = new CustomDropdown(document.getElementById('wardDropdown'), {
+                disabled: true,
+                onSelect: (ward) => {
+                    // Update hidden select for compatibility
+                    const hiddenSelect = document.getElementById('wardSelect');
+                    hiddenSelect.value = ward.code;
+                    
+                    // Update results
+                    displayResult(provinceDropdown.selectedItem, ward);
+                },
+                onClear: () => {
+                    document.getElementById('wardSelect').value = '';
+                    displayResult(provinceDropdown.selectedItem);
+                }
+            });
+            
+            // Set province data
+            provinceDropdown.setData(allProvinces);
+            
+            // Setup download buttons
+            setupDownloadButtons();
+        }
+
+        // Setup download button functionality
+        function setupDownloadButtons() {
+            document.getElementById('downloadProvince').addEventListener('click', () => {
+                downloadJSON(provincesData, 'province.json');
+            });
+            
+            document.getElementById('downloadWard').addEventListener('click', () => {
+                downloadJSON(wardsData, 'ward.json');
+            });
+        }
+
+        // Download JSON file
+        function downloadJSON(data, filename) {
+            const jsonString = JSON.stringify(data, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = filename;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            // Show success notification
+            showNotification(`Đã tải xuống ${filename} thành công!`, 'success');
+        }
+
+        // Update download info
+        function updateDownloadInfo() {
+            document.getElementById('provinceCount').textContent = Object.keys(provincesData).length;
+            document.getElementById('wardCount').textContent = Object.keys(wardsData).length;
+        }
+
+        // Show notification
+        function showNotification(message, type = 'info') {
+            const notification = document.createElement('div');
+            notification.className = `alert alert-${type === 'success' ? 'success' : 'info'} notification-toast`;
+            notification.innerHTML = `
+                <i class="bi bi-${type === 'success' ? 'check-circle' : 'info-circle'} me-2"></i>
+                ${message}
+            `;
+            
+            // Add notification styles
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 9999;
+                min-width: 300px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+                border: none;
+                border-radius: 8px;
+                opacity: 0;
+                transform: translateX(100%);
+                transition: all 0.3s ease;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animate in
+            setTimeout(() => {
+                notification.style.opacity = '1';
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Animate out and remove
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    if (notification.parentNode) {
+                        document.body.removeChild(notification);
+                    }
+                }, 300);
+            }, 3000);
+        }
+
+        // Hiển thị kết quả đã chọn
+        function displayResult(provinceData, wardData = null) {
+            const resultDiv = document.getElementById('selectedResult');
+            const contentDiv = document.getElementById('resultContent');
+            
+            let html = '';
+            
+            if (provinceData) {
+                html += `
+                    <div class="result-item">
+                        <span class="result-label">Tỉnh/Thành phố:</span>
+                        <span class="result-value">${provinceData.name_with_type}</span>
+                        <span class="badge-custom ms-2">${provinceData.type}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Tên:</span>
+                        <span class="result-value">${provinceData.name}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Slug:</span>
+                        <span class="result-value">${provinceData.slug}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Mã:</span>
+                        <span class="result-value">${provinceData.code}</span>
+                    </div>
+                `;
+            }
+            
+            if (wardData) {
+                html += `
+                    <hr class="my-3">
+                    <div class="result-item">
+                        <span class="result-label">Xã/Phường:</span>
+                        <span class="result-value">${wardData.name_with_type}</span>
+                        <span class="badge-custom ms-2">${wardData.type}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Tên:</span>
+                        <span class="result-value">${wardData.name}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Slug:</span>
+                        <span class="result-value">${wardData.slug}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Mã:</span>
+                        <span class="result-value">${wardData.code}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Đường dẫn:</span>
+                        <span class="result-value">${wardData.path}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Đường dẫn đầy đủ:</span>
+                        <span class="result-value">${wardData.path_with_type}</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Mã cha:</span>
+                        <span class="result-value">${wardData.parent_code}</span>
+                    </div>
+                `;
+            }
+            
+            contentDiv.innerHTML = html;
+            resultDiv.style.display = 'block';
+        }
+
+        // Load data when page loads
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>
