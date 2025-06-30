@@ -9,7 +9,9 @@
 ![Preview](./images/new_boundary.png)
 
 
-🌐 **Live Demo**: [Vietmap pick address live demo](https://vietmap-company.github.io/vietnam_administrative_address/)
+🌐 **Live Demo chọn địa chỉ (dropdown)**: [Vietmap pick address live demo](https://vietmap-company.github.io/vietnam_administrative_address/)
+
+🌐 **Live Demo tìm kiếm với địa chỉ mới**: [Vietmap search live demo](https://dev.fastmap.vn/staging/)
 
 Dữ liệu hành chính Việt Nam đầy đủ với format JSON chuẩn, bao gồm thông tin tỉnh/thành phố và xã/phường/thị trấn.
 
@@ -73,7 +75,7 @@ Convert địa chỉ từ cơ cấu hành chính cũ sang format mới, hỗ tr�
 ✅ Custom API endpoints cho từng use case của bạn  
 ✅ Tải liệu kỹ thuật và hướng dẫn tích hợp  
 ✅ Hỗ trợ tích hợp, có kỹ thuật viên hỗ trợ trong suốt quá trình tích hợp và triển khai  
-✅ Truy cập môi trường testing trong suốt quá trình phát triển
+✅ Truy cập môi trường testing trong suốt quá trình phát triển</br>
 ✅ Hỗ trợ trong suốt quá trình triển khai production
 
 ## 📄 License
