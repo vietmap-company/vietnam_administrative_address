@@ -7160,12 +7160,12 @@
     "parent_code": "12"
   },
   "5645": {
-    "name": "Trà Mai",
+    "name": "Nam Trà My",
     "type": "xa",
-    "slug": "tra-mai",
-    "name_with_type": "Xã Trà Mai",
-    "path": "Trà Mai, Đà Nẵng",
-    "path_with_type": "Xã Trà Mai, Thành phố Đà Nẵng",
+    "slug": "tra-my",
+    "name_with_type": "Xã Nam Trà My",
+    "path": "Nam Trà My, Đà Nẵng",
+    "path_with_type": "Xã Nam Trà My, Thành phố Đà Nẵng",
     "code": "5645",
     "parent_code": "13"
   },
