@@ -5,13 +5,15 @@
 [![Administrative Level](https://img.shields.io/badge/Level-Province%2FWard-orange.svg)](.)
 [![GitHub Pages](https://img.shields.io/badge/Demo-GitHub%20Pages-brightgreen.svg)](https://vietmap-company.github.io/vietnam_administrative_address/)
 
+🌐 **Live Demo chọn địa chỉ (dropdown)**: [Vietmap pick address live demo](https://vietmap-company.github.io/vietnam_administrative_address/)
+
+🌐 **Live Demo tìm kiếm với địa chỉ hybrid (cũ & mới)**: [Vietmap search live demo](https://dev.fastmap.vn/staging/)
+
+🌐 **Live Demo chuyển đổi địa chỉ cũ <-> mới**: [Vietmap address converter live demo](https://tools.vietmap.vn/staging/convert-address)
 
 ![Preview](./images/new_boundary.png)
 
 
-🌐 **Live Demo chọn địa chỉ (dropdown)**: [Vietmap pick address live demo](https://vietmap-company.github.io/vietnam_administrative_address/)
-
-🌐 **Live Demo tìm kiếm với địa chỉ mới**: [Vietmap search live demo](https://dev.fastmap.vn/staging/)
 
 Dữ liệu hành chính Việt Nam đầy đủ với format JSON chuẩn, bao gồm thông tin tỉnh/thành phố và xã/phường/thị trấn.
 
