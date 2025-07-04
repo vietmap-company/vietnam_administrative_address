@@ -7,7 +7,7 @@
 
 🌐 **Live Demo chọn địa chỉ (dropdown)**: [Vietmap pick address live demo](https://vietmap-company.github.io/vietnam_administrative_address/)
 
-🌐 **Live Demo tìm kiếm với địa chỉ hybrid (cũ & mới)**: [Vietmap search live demo](https://dev.fastmap.vn/staging/)
+🌐 **Live Demo tìm kiếm với địa chỉ hybrid (cũ & mới)**: [Vietmap search live demo](https://tools.vietmap.vn/staging/)
 
 🌐 **Live Demo chuyển đổi địa chỉ cũ <-> mới**: [Vietmap address converter live demo](https://tools.vietmap.vn/staging/convert-address)
 
