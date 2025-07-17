@@ -9,7 +9,7 @@
 
 🌐 **Live Demo tìm kiếm với địa chỉ hybrid (cũ & mới)**: [Vietmap search live demo](https://tools.vietmap.vn/staging/)
 
-🌐 **Live Demo chuyển đổi địa chỉ cũ <-> mới**: [Vietmap address converter live demo](https://tools.vietmap.vn/staging/convert-address)
+🌐 **Chuyển đổi địa chỉ cũ <-> mới miễn phí (excel support)**: [Vietmap address converter live demo](https://tools.vietmap.vn/staging/convert-address)
 
 ![Preview](./images/new_boundary.png)
 
