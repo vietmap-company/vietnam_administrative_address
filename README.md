@@ -1,3 +1,34 @@
+
+<div align="right">
+  <details>
+    <summary >🌐 Language</summary>
+    <div>
+      <div align="center">
+        <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=en">English</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=zh-CN">简体中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=zh-TW">繁體中文</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=ja">日本語</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=ko">한국어</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=hi">हिन्दी</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=th">ไทย</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=fr">Français</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=de">Deutsch</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=es">Español</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=it">Italiano</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=ru">Русский</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=pt">Português</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=nl">Nederlands</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=pl">Polski</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=ar">العربية</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=fa">فارسی</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=tr">Türkçe</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=vi">Tiếng Việt</a>
+        | <a href="https://openaitx.github.io/view.html?user=vietmap-company&project=vietnam_administrative_address&lang=id">Bahasa Indonesia</a>
+      </div>
+    </div>
+  </details>
+</div>
+
 # Vietnam Administrative Data 🇻🇳
 
 [![License](https://img.shields.io/badge/License-VietMap-blue.svg)](LICENSE)
