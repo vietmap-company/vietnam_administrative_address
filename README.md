@@ -9,6 +9,8 @@
 
 🌐 **Live Demo tìm kiếm với địa chỉ hybrid (cũ & mới)**: [Vietmap search live demo](https://tools.vietmap.vn/staging/)
 
+🌐 **Live Map - Bản đồ Việt Nam sau cập nhật**: [Vietmap live map](https://tools.vietmap.vn/live/)
+
 🌐 **Live Demo chuyển đổi địa chỉ cũ <-> mới**: [Vietmap address converter live demo](https://tools.vietmap.vn/staging/convert-address)
 
 ![Preview](./images/new_boundary.png)
