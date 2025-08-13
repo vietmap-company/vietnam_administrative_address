@@ -7,11 +7,12 @@
 
 🌐 **Live Demo chọn địa chỉ (dropdown)**: [Vietmap pick address live demo](https://vietmap-company.github.io/vietnam_administrative_address/)
 
-🌐 **Live Demo tìm kiếm với địa chỉ hybrid (cũ & mới)**: [Vietmap search live demo](https://tools.vietmap.vn/staging/)
-
 🌐 **Live Map - Bản đồ Việt Nam sau cập nhật**: [Vietmap live map](https://tools.vietmap.vn/live/)
 
-🌐 **Live Demo chuyển đổi địa chỉ cũ <-> mới**: [Vietmap address converter live demo](https://tools.vietmap.vn/staging/convert-address)
+🌐 **Chuyển đổi địa chỉ cũ <-> mới miễn phí (excel support)**: [Vietmap address converter live demo](https://tools.vietmap.vn/staging/convert-address)
+
+🌐 **Live Demo tìm kiếm với địa chỉ hybrid (cũ & mới)**: [Vietmap search live demo](https://tools.vietmap.vn/staging/)
+
 
 ![Preview](./images/new_boundary.png)
 
