@@ -5,13 +5,14 @@
 [![Administrative Level](https://img.shields.io/badge/Level-Province%2FWard-orange.svg)](.)
 [![GitHub Pages](https://img.shields.io/badge/Demo-GitHub%20Pages-brightgreen.svg)](https://vietmap-company.github.io/vietnam_administrative_address/)
 
-🌐 **Live Demo chọn địa chỉ (dropdown)**: [Vietmap pick address live demo](https://vietmap-company.github.io/vietnam_administrative_address/)
+
+🌐 **Đăng kí API key**: [VietMap Console](https://maps.vietmap.vn/console/register)
 
 🌐 **Live Map - Bản đồ Việt Nam sau cập nhật**: [Vietmap live map](https://tools.vietmap.vn/live/)
 
-🌐 **Chuyển đổi địa chỉ cũ <-> mới miễn phí (excel support)**: [Vietmap address converter live demo](https://tools.vietmap.vn/staging/convert-address)
+🌐 **Live Demo chọn địa chỉ (dropdown)**: [Vietmap pick address live demo](https://vietmap-company.github.io/vietnam_administrative_address/)
 
-🌐 **Live Demo tìm kiếm với địa chỉ hybrid (cũ & mới)**: [Vietmap search live demo](https://tools.vietmap.vn/staging/)
+🌐 **Chuyển đổi địa chỉ cũ <-> mới miễn phí (excel support)**: [Vietmap address converter live demo](https://tools.vietmap.vn/staging/convert-address)
 
 
 ![Preview](./images/new_boundary.png)
