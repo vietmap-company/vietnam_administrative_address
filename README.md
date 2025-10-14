@@ -14,45 +14,7 @@
 
 🌐 **Chuyển đổi địa chỉ cũ <-> mới miễn phí (excel support)**: [Vietmap address converter live demo](https://tools.vietmap.vn/staging/convert-address)
 
-<div>
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Map</title>
-		<link rel='stylesheet' href='https://unpkg.com/@vietmap/vietmap-gl-js@6.0.1/dist/vietmap-gl.css' />
-		<script src='https://unpkg.com/@vietmap/vietmap-gl-js@6.0.1/dist/vietmap-gl.js'></script>
-
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-			}
-
-			#map {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="map"></div>
-		<script>
-			const map = new vietmapgl.Map({
-				container: "map",
-				style:
-					"https://maps.vietmap.vn/maps/styles/tm/style.json?apikey=95f852d9f8c38e08ceacfd456b59059d0618254a50d3854c",
-				center: [106.66817068179284, 10.803866192772915],
-				zoom: 9,
-			});
-			map.addControl(new vietmapgl.NavigationControl());
-		</script>
-	</body>
- </html>
-</div>
-
+![New Administrative Map of Vietnam](./images/new_boundary.png)
 
 Dữ liệu hành chính Việt Nam đầy đủ với format JSON chuẩn, bao gồm thông tin tỉnh/thành phố và xã/phường/thị trấn.
 
