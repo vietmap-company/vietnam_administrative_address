@@ -14,42 +14,11 @@
 🌐 **Live Demo tìm kiếm với địa chỉ hybrid (cũ & mới)**: [Vietmap search live demo](https://tools.vietmap.vn/staging/)
 
 
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Map</title>
-		<link rel='stylesheet' href='https://unpkg.com/@vietmap/vietmap-gl-js@6.0.1/dist/vietmap-gl.css' />
-		<script src='https://unpkg.com/@vietmap/vietmap-gl-js@6.0.1/dist/vietmap-gl.js'></script>
+🔎 Xem bản đồ trực tiếp: https://vietmap-company.github.io/vietnam_administrative_address/map-preview.html
 
-		<style>
-			body {
-				margin: 0;
-				padding: 0;
-			}
+Lưu ý: README trên GitHub không phép chạy JavaScript (bị sandbox), nên không thể nhúng bản đồ chạy trực tiếp ngay trong README. Bên dưới là ảnh preview tĩnh để tham khảo giao diện:
 
-			#map {
-				position: absolute;
-				width: 100%;
-				height: 100%;
-			}
-		</style>
-	</head>
-	<body>
-		<div id="map"></div>
-		<script>
-			const map = new vietmapgl.Map({
-				container: "map",
-				style:
-					"https://maps.vietmap.vn/maps/styles/tm/style.json?apikey=95f852d9f8c38e08ceacfd456b59059d0618254a50d3854c",
-				center: [106.66817068179284, 10.803866192772915],
-				zoom: 9,
-			});
-			map.addControl(new vietmapgl.NavigationControl());
-		</script>
-	</body>
- </html>
+![VietMap Live Map Preview](images/new_boundary.png)
 
 
 
