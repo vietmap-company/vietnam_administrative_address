@@ -687,14 +687,14 @@
                 showLoading();
                 
                 // Load provinces data
-                const provincesResponse = await fetch('./province.json');
+                const provincesResponse = await fetch('./admin_new/province.json');
                 if (!provincesResponse.ok) {
                     throw new Error('Không thể tải dữ liệu tỉnh/thành phố');
                 }
                 provincesData = await provincesResponse.json();
                 
                 // Load wards data
-                const wardsResponse = await fetch('./ward.json');
+                const wardsResponse = await fetch('./admin_new/ward.json');
                 if (!wardsResponse.ok) {
                     throw new Error('Không thể tải dữ liệu xã/phường');
                 }

@@ -1,3 +1,8 @@
+## 14-10-2025
+- Bổ sung file mapping_address.xlsx, chứa thông tin chuyển đổi địa chỉ từ cơ cấu hành chính cũ sang mới.
+- Bổ sung dữ liệu về các cấp hành chính cũ.
+- Cấu trúc lại thư mục dự án để dễ dàng quản lý và truy cập dữ liệu.
+
 ## 04-07-2025
 * Cập nhật dữ liệu ward.json với các thay đổi sau:
   
