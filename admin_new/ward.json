@@ -125,7 +125,7 @@
     "slug": "dak-lua",
     "name_with_type": "Xã Đak Lua",
     "path": "Đak Lua, Đồng Nai",
-    "path_with_type": "Xã Đak Lua, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Đak Lua, Thành phố Đồng Nai",
     "code": "279",
     "parent_code": "23"
   },
@@ -465,7 +465,7 @@
     "slug": "phu-ly",
     "name_with_type": "Xã Phú Lý",
     "path": "Phú Lý, Đồng Nai",
-    "path_with_type": "Xã Phú Lý, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Phú Lý, Thành phố Đồng Nai",
     "code": "535",
     "parent_code": "23"
   },
@@ -805,7 +805,7 @@
     "slug": "xuan-hoa",
     "name_with_type": "Xã Xuân Hòa",
     "path": "Xuân Hòa, Đồng Nai",
-    "path_with_type": "Xã Xuân Hòa, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Xuân Hòa, Thành phố Đồng Nai",
     "code": "791",
     "parent_code": "23"
   },
@@ -1145,7 +1145,7 @@
     "slug": "phuoc-tan",
     "name_with_type": "Phường Phước Tân",
     "path": "Phước Tân, Đồng Nai",
-    "path_with_type": "Phường Phước Tân, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Phước Tân, Thành phố Đồng Nai",
     "code": "1047",
     "parent_code": "23"
   },
@@ -1485,7 +1485,7 @@
     "slug": "tam-phuoc",
     "name_with_type": "Phường Tam Phước",
     "path": "Tam Phước, Đồng Nai",
-    "path_with_type": "Phường Tam Phước, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Tam Phước, Thành phố Đồng Nai",
     "code": "1303",
     "parent_code": "23"
   },
@@ -1825,7 +1825,7 @@
     "slug": "dak-o",
     "name_with_type": "Xã Đăk Ơ",
     "path": "Đăk Ơ, Đồng Nai",
-    "path_with_type": "Xã Đăk Ơ, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Đăk Ơ, Thành phố Đồng Nai",
     "code": "1559",
     "parent_code": "23"
   },
@@ -2165,7 +2165,7 @@
     "slug": "xuan-dong",
     "name_with_type": "Xã Xuân Đông",
     "path": "Xuân Đông, Đồng Nai",
-    "path_with_type": "Xã Xuân Đông, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Xuân Đông, Thành phố Đồng Nai",
     "code": "1815",
     "parent_code": "23"
   },
@@ -2505,7 +2505,7 @@
     "slug": "bu-gia-map",
     "name_with_type": "Xã Bù Gia Mập",
     "path": "Bù Gia Mập, Đồng Nai",
-    "path_with_type": "Xã Bù Gia Mập, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Bù Gia Mập, Thành phố Đồng Nai",
     "code": "2071",
     "parent_code": "23"
   },
@@ -2845,7 +2845,7 @@
     "slug": "thanh-son",
     "name_with_type": "Xã Thanh Sơn",
     "path": "Thanh Sơn, Đồng Nai",
-    "path_with_type": "Xã Thanh Sơn, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Thanh Sơn, Thành phố Đồng Nai",
     "code": "2327",
     "parent_code": "23"
   },
@@ -3181,11 +3181,11 @@
   },
   "2583": {
     "name": "Xuân Lộc",
-    "type": "xa",
+    "type": "phuong",
     "slug": "xuan-loc",
-    "name_with_type": "Xã Xuân Lộc",
+    "name_with_type": "Phường Xuân Lộc",
     "path": "Xuân Lộc, Đồng Nai",
-    "path_with_type": "Xã Xuân Lộc, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Xuân Lộc, Thành phố Đồng Nai",
     "code": "2583",
     "parent_code": "23"
   },
@@ -3525,7 +3525,7 @@
     "slug": "xuan-thanh",
     "name_with_type": "Xã Xuân Thành",
     "path": "Xuân Thành, Đồng Nai",
-    "path_with_type": "Xã Xuân Thành, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Xuân Thành, Thành phố Đồng Nai",
     "code": "2839",
     "parent_code": "23"
   },
@@ -3865,7 +3865,7 @@
     "slug": "xuan-bac",
     "name_with_type": "Xã Xuân Bắc",
     "path": "Xuân Bắc, Đồng Nai",
-    "path_with_type": "Xã Xuân Bắc, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Xuân Bắc, Thành phố Đồng Nai",
     "code": "3095",
     "parent_code": "23"
   },
@@ -4205,7 +4205,7 @@
     "slug": "la-nga",
     "name_with_type": "Xã La Ngà",
     "path": "La Ngà, Đồng Nai",
-    "path_with_type": "Xã La Ngà, Tỉnh Đồng Nai",
+    "path_with_type": "Xã La Ngà, Thành phố Đồng Nai",
     "code": "3351",
     "parent_code": "23"
   },
@@ -4545,7 +4545,7 @@
     "slug": "dinh-quan",
     "name_with_type": "Xã Định Quán",
     "path": "Định Quán, Đồng Nai",
-    "path_with_type": "Xã Định Quán, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Định Quán, Thành phố Đồng Nai",
     "code": "3607",
     "parent_code": "23"
   },
@@ -4885,7 +4885,7 @@
     "slug": "phu-vinh",
     "name_with_type": "Xã Phú Vinh",
     "path": "Phú Vinh, Đồng Nai",
-    "path_with_type": "Xã Phú Vinh, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Phú Vinh, Thành phố Đồng Nai",
     "code": "3863",
     "parent_code": "23"
   },
@@ -5225,7 +5225,7 @@
     "slug": "phu-hoa",
     "name_with_type": "Xã Phú Hòa",
     "path": "Phú Hòa, Đồng Nai",
-    "path_with_type": "Xã Phú Hòa, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Phú Hòa, Thành phố Đồng Nai",
     "code": "4119",
     "parent_code": "23"
   },
@@ -5565,7 +5565,7 @@
     "slug": "ta-lai",
     "name_with_type": "Xã Tà Lài",
     "path": "Tà Lài, Đồng Nai",
-    "path_with_type": "Xã Tà Lài, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Tà Lài, Thành phố Đồng Nai",
     "code": "4375",
     "parent_code": "23"
   },
@@ -5905,7 +5905,7 @@
     "slug": "nam-cat-tien",
     "name_with_type": "Xã Nam Cát Tiên",
     "path": "Nam Cát Tiên, Đồng Nai",
-    "path_with_type": "Xã Nam Cát Tiên, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Nam Cát Tiên, Thành phố Đồng Nai",
     "code": "4631",
     "parent_code": "23"
   },
@@ -6241,11 +6241,11 @@
   },
   "4887": {
     "name": "Tân Phú",
-    "type": "xa",
+    "type": "phuong",
     "slug": "tan-phu",
-    "name_with_type": "Xã Tân Phú",
+    "name_with_type": "Phường Tân Phú",
     "path": "Tân Phú, Đồng Nai",
-    "path_with_type": "Xã Tân Phú, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Tân Phú, Thành phố Đồng Nai",
     "code": "4887",
     "parent_code": "23"
   },
@@ -6585,7 +6585,7 @@
     "slug": "phu-lam",
     "name_with_type": "Xã Phú Lâm",
     "path": "Phú Lâm, Đồng Nai",
-    "path_with_type": "Xã Phú Lâm, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Phú Lâm, Thành phố Đồng Nai",
     "code": "5143",
     "parent_code": "23"
   },
@@ -6921,11 +6921,11 @@
   },
   "5399": {
     "name": "Trị An",
-    "type": "xa",
+    "type": "phuong",
     "slug": "tri-an",
-    "name_with_type": "Xã Trị An",
+    "name_with_type": "Phường Trị An",
     "path": "Trị An, Đồng Nai",
-    "path_with_type": "Xã Trị An, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Trị An, Thành phố Đồng Nai",
     "code": "5399",
     "parent_code": "23"
   },
@@ -7265,7 +7265,7 @@
     "slug": "tan-an",
     "name_with_type": "Xã Tân An",
     "path": "Tân An, Đồng Nai",
-    "path_with_type": "Xã Tân An, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Tân An, Thành phố Đồng Nai",
     "code": "5655",
     "parent_code": "23"
   },
@@ -7605,7 +7605,7 @@
     "slug": "tan-trieu",
     "name_with_type": "Phường Tân Triều",
     "path": "Tân Triều, Đồng Nai",
-    "path_with_type": "Phường Tân Triều, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Tân Triều, Thành phố Đồng Nai",
     "code": "5911",
     "parent_code": "23"
   },
@@ -7945,7 +7945,7 @@
     "slug": "phu-rieng",
     "name_with_type": "Xã Phú Riềng",
     "path": "Phú Riềng, Đồng Nai",
-    "path_with_type": "Xã Phú Riềng, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Phú Riềng, Thành phố Đồng Nai",
     "code": "6167",
     "parent_code": "23"
   },
@@ -8281,11 +8281,11 @@
   },
   "6423": {
     "name": "Nhơn Trạch",
-    "type": "xa",
+    "type": "phuong",
     "slug": "nhon-trach",
-    "name_with_type": "Xã Nhơn Trạch",
+    "name_with_type": "Phường Nhơn Trạch",
     "path": "Nhơn Trạch, Đồng Nai",
-    "path_with_type": "Xã Nhơn Trạch, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Nhơn Trạch, Thành phố Đồng Nai",
     "code": "6423",
     "parent_code": "23"
   },
@@ -8625,7 +8625,7 @@
     "slug": "phuoc-an",
     "name_with_type": "Xã Phước An",
     "path": "Phước An, Đồng Nai",
-    "path_with_type": "Xã Phước An, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Phước An, Thành phố Đồng Nai",
     "code": "6679",
     "parent_code": "23"
   },
@@ -8965,7 +8965,7 @@
     "slug": "phuoc-thai",
     "name_with_type": "Xã Phước Thái",
     "path": "Phước Thái, Đồng Nai",
-    "path_with_type": "Xã Phước Thái, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Phước Thái, Thành phố Đồng Nai",
     "code": "6935",
     "parent_code": "23"
   },
@@ -9305,7 +9305,7 @@
     "slug": "long-phuoc",
     "name_with_type": "Xã Long Phước",
     "path": "Long Phước, Đồng Nai",
-    "path_with_type": "Xã Long Phước, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Long Phước, Thành phố Đồng Nai",
     "code": "7191",
     "parent_code": "23"
   },
@@ -9645,7 +9645,7 @@
     "slug": "binh-an",
     "name_with_type": "Xã Bình An",
     "path": "Bình An, Đồng Nai",
-    "path_with_type": "Xã Bình An, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Bình An, Thành phố Đồng Nai",
     "code": "7447",
     "parent_code": "23"
   },
@@ -9981,11 +9981,11 @@
   },
   "7703": {
     "name": "Long Thành",
-    "type": "xa",
+    "type": "phuong",
     "slug": "long-thanh",
-    "name_with_type": "Xã Long Thành",
+    "name_with_type": "Phường Long Thành",
     "path": "Long Thành, Đồng Nai",
-    "path_with_type": "Xã Long Thành, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Long Thành, Thành phố Đồng Nai",
     "code": "7703",
     "parent_code": "23"
   },
@@ -10325,7 +10325,7 @@
     "slug": "an-phuoc",
     "name_with_type": "Xã An Phước",
     "path": "An Phước, Đồng Nai",
-    "path_with_type": "Xã An Phước, Tỉnh Đồng Nai",
+    "path_with_type": "Xã An Phước, Thành phố Đồng Nai",
     "code": "7959",
     "parent_code": "23"
   },
@@ -10665,7 +10665,7 @@
     "slug": "an-vien",
     "name_with_type": "Xã An Viễn",
     "path": "An Viễn, Đồng Nai",
-    "path_with_type": "Xã An Viễn, Tỉnh Đồng Nai",
+    "path_with_type": "Xã An Viễn, Thành phố Đồng Nai",
     "code": "8215",
     "parent_code": "23"
   },
@@ -11005,7 +11005,7 @@
     "slug": "binh-minh",
     "name_with_type": "Xã Bình Minh",
     "path": "Bình Minh, Đồng Nai",
-    "path_with_type": "Xã Bình Minh, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Bình Minh, Thành phố Đồng Nai",
     "code": "8471",
     "parent_code": "23"
   },
@@ -11341,11 +11341,11 @@
   },
   "8727": {
     "name": "Trảng Bom",
-    "type": "xa",
+    "type": "phuong",
     "slug": "trang-bom",
-    "name_with_type": "Xã Trảng Bom",
+    "name_with_type": "Phường Trảng Bom",
     "path": "Trảng Bom, Đồng Nai",
-    "path_with_type": "Xã Trảng Bom, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Trảng Bom, Thành phố Đồng Nai",
     "code": "8727",
     "parent_code": "23"
   },
@@ -11685,7 +11685,7 @@
     "slug": "bau-ham",
     "name_with_type": "Xã Bàu Hàm",
     "path": "Bàu Hàm, Đồng Nai",
-    "path_with_type": "Xã Bàu Hàm, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Bàu Hàm, Thành phố Đồng Nai",
     "code": "8983",
     "parent_code": "23"
   },
@@ -12025,7 +12025,7 @@
     "slug": "hung-thinh",
     "name_with_type": "Xã Hưng Thịnh",
     "path": "Hưng Thịnh, Đồng Nai",
-    "path_with_type": "Xã Hưng Thịnh, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Hưng Thịnh, Thành phố Đồng Nai",
     "code": "9239",
     "parent_code": "23"
   },
@@ -12361,11 +12361,11 @@
   },
   "9495": {
     "name": "Dầu Giây",
-    "type": "xa",
+    "type": "phuong",
     "slug": "dau-giay",
-    "name_with_type": "Xã Dầu Giây",
+    "name_with_type": "Phường Dầu Giây",
     "path": "Dầu Giây, Đồng Nai",
-    "path_with_type": "Xã Dầu Giây, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Dầu Giây, Thành phố Đồng Nai",
     "code": "9495",
     "parent_code": "23"
   },
@@ -12705,7 +12705,7 @@
     "slug": "gia-kiem",
     "name_with_type": "Xã Gia Kiệm",
     "path": "Gia Kiệm, Đồng Nai",
-    "path_with_type": "Xã Gia Kiệm, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Gia Kiệm, Thành phố Đồng Nai",
     "code": "9751",
     "parent_code": "23"
   },
@@ -13045,7 +13045,7 @@
     "slug": "thong-nhat",
     "name_with_type": "Xã Thống Nhất",
     "path": "Thống Nhất, Đồng Nai",
-    "path_with_type": "Xã Thống Nhất, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Thống Nhất, Thành phố Đồng Nai",
     "code": "10007",
     "parent_code": "23"
   },
@@ -13375,7 +13375,7 @@
     "slug": "binh-loc",
     "name_with_type": "Phường Bình Lộc",
     "path": "Bình Lộc, Đồng Nai",
-    "path_with_type": "Phường Bình Lộc, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Bình Lộc, Thành phố Đồng Nai",
     "code": "10263",
     "parent_code": "23"
   },
@@ -13695,7 +13695,7 @@
     "slug": "bao-vinh",
     "name_with_type": "Phường Bảo Vinh",
     "path": "Bảo Vinh, Đồng Nai",
-    "path_with_type": "Phường Bảo Vinh, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Bảo Vinh, Thành phố Đồng Nai",
     "code": "10519",
     "parent_code": "23"
   },
@@ -14015,7 +14015,7 @@
     "slug": "xuan-lap",
     "name_with_type": "Phường Xuân Lập",
     "path": "Xuân Lập, Đồng Nai",
-    "path_with_type": "Phường Xuân Lập, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Xuân Lập, Thành phố Đồng Nai",
     "code": "10775",
     "parent_code": "23"
   },
@@ -14335,7 +14335,7 @@
     "slug": "long-khanh",
     "name_with_type": "Phường Long Khánh",
     "path": "Long Khánh, Đồng Nai",
-    "path_with_type": "Phường Long Khánh, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Long Khánh, Thành phố Đồng Nai",
     "code": "11031",
     "parent_code": "23"
   },
@@ -14655,7 +14655,7 @@
     "slug": "hang-gon",
     "name_with_type": "Phường Hàng Gòn",
     "path": "Hàng Gòn, Đồng Nai",
-    "path_with_type": "Phường Hàng Gòn, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Hàng Gòn, Thành phố Đồng Nai",
     "code": "11287",
     "parent_code": "23"
   },
@@ -14975,7 +14975,7 @@
     "slug": "xuan-que",
     "name_with_type": "Xã Xuân Quế",
     "path": "Xuân Quế, Đồng Nai",
-    "path_with_type": "Xã Xuân Quế, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Xuân Quế, Thành phố Đồng Nai",
     "code": "11543",
     "parent_code": "23"
   },
@@ -15285,7 +15285,7 @@
     "slug": "xuan-duong",
     "name_with_type": "Xã Xuân Đường",
     "path": "Xuân Đường, Đồng Nai",
-    "path_with_type": "Xã Xuân Đường, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Xuân Đường, Thành phố Đồng Nai",
     "code": "11799",
     "parent_code": "23"
   },
@@ -15595,7 +15595,7 @@
     "slug": "cam-my",
     "name_with_type": "Xã Cẩm Mỹ",
     "path": "Cẩm Mỹ, Đồng Nai",
-    "path_with_type": "Xã Cẩm Mỹ, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Cẩm Mỹ, Thành phố Đồng Nai",
     "code": "12055",
     "parent_code": "23"
   },
@@ -15905,7 +15905,7 @@
     "slug": "song-ray",
     "name_with_type": "Xã Sông Ray",
     "path": "Sông Ray, Đồng Nai",
-    "path_with_type": "Xã Sông Ray, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Sông Ray, Thành phố Đồng Nai",
     "code": "12311",
     "parent_code": "23"
   },
@@ -16215,7 +16215,7 @@
     "slug": "xuan-dinh",
     "name_with_type": "Xã Xuân Định",
     "path": "Xuân Định, Đồng Nai",
-    "path_with_type": "Xã Xuân Định, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Xuân Định, Thành phố Đồng Nai",
     "code": "12567",
     "parent_code": "23"
   },
@@ -16525,7 +16525,7 @@
     "slug": "xuan-phu",
     "name_with_type": "Xã Xuân Phú",
     "path": "Xuân Phú, Đồng Nai",
-    "path_with_type": "Xã Xuân Phú, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Xuân Phú, Thành phố Đồng Nai",
     "code": "12823",
     "parent_code": "23"
   },
@@ -16835,7 +16835,7 @@
     "slug": "phu-trung",
     "name_with_type": "Xã Phú Trung",
     "path": "Phú Trung, Đồng Nai",
-    "path_with_type": "Xã Phú Trung, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Phú Trung, Thành phố Đồng Nai",
     "code": "13079",
     "parent_code": "23"
   },
@@ -17145,7 +17145,7 @@
     "slug": "thuan-loi",
     "name_with_type": "Xã Thuận Lợi",
     "path": "Thuận Lợi, Đồng Nai",
-    "path_with_type": "Xã Thuận Lợi, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Thuận Lợi, Thành phố Đồng Nai",
     "code": "13335",
     "parent_code": "23"
   },
@@ -17455,7 +17455,7 @@
     "slug": "dong-tam",
     "name_with_type": "Xã Đồng Tâm",
     "path": "Đồng Tâm, Đồng Nai",
-    "path_with_type": "Xã Đồng Tâm, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Đồng Tâm, Thành phố Đồng Nai",
     "code": "13591",
     "parent_code": "23"
   },
@@ -17765,7 +17765,7 @@
     "slug": "tan-loi",
     "name_with_type": "Xã Tân Lợi",
     "path": "Tân Lợi, Đồng Nai",
-    "path_with_type": "Xã Tân Lợi, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Tân Lợi, Thành phố Đồng Nai",
     "code": "13847",
     "parent_code": "23"
   },
@@ -18071,11 +18071,11 @@
   },
   "14103": {
     "name": "Đồng Phú",
-    "type": "xa",
+    "type": "phuong",
     "slug": "dong-phu",
-    "name_with_type": "Xã Đồng Phú",
+    "name_with_type": "Phường Đồng Phú",
     "path": "Đồng Phú, Đồng Nai",
-    "path_with_type": "Xã Đồng Phú, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Đồng Phú, Thành phố Đồng Nai",
     "code": "14103",
     "parent_code": "23"
   },
@@ -18375,7 +18375,7 @@
     "slug": "phuoc-son",
     "name_with_type": "Xã Phước Sơn",
     "path": "Phước Sơn, Đồng Nai",
-    "path_with_type": "Xã Phước Sơn, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Phước Sơn, Thành phố Đồng Nai",
     "code": "14359",
     "parent_code": "23"
   },
@@ -18665,7 +18665,7 @@
     "slug": "nghia-trung",
     "name_with_type": "Xã Nghĩa Trung",
     "path": "Nghĩa Trung, Đồng Nai",
-    "path_with_type": "Xã Nghĩa Trung, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Nghĩa Trung, Thành phố Đồng Nai",
     "code": "14615",
     "parent_code": "23"
   },
@@ -18955,7 +18955,7 @@
     "slug": "bu-dang",
     "name_with_type": "Xã Bù Đăng",
     "path": "Bù Đăng, Đồng Nai",
-    "path_with_type": "Xã Bù Đăng, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Bù Đăng, Thành phố Đồng Nai",
     "code": "14871",
     "parent_code": "23"
   },
@@ -19245,7 +19245,7 @@
     "slug": "tho-son",
     "name_with_type": "Xã Thọ Sơn",
     "path": "Thọ Sơn, Đồng Nai",
-    "path_with_type": "Xã Thọ Sơn, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Thọ Sơn, Thành phố Đồng Nai",
     "code": "15127",
     "parent_code": "23"
   },
@@ -19535,7 +19535,7 @@
     "slug": "dak-nhau",
     "name_with_type": "Xã Đak Nhau",
     "path": "Đak Nhau, Đồng Nai",
-    "path_with_type": "Xã Đak Nhau, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Đak Nhau, Thành phố Đồng Nai",
     "code": "15383",
     "parent_code": "23"
   },
@@ -19825,7 +19825,7 @@
     "slug": "bom-bo",
     "name_with_type": "Xã Bom Bo",
     "path": "Bom Bo, Đồng Nai",
-    "path_with_type": "Xã Bom Bo, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Bom Bo, Thành phố Đồng Nai",
     "code": "15639",
     "parent_code": "23"
   },
@@ -20115,7 +20115,7 @@
     "slug": "long-binh",
     "name_with_type": "Phường Long Bình",
     "path": "Long Bình, Đồng Nai",
-    "path_with_type": "Phường Long Bình, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Long Bình, Thành phố Đồng Nai",
     "code": "15895",
     "parent_code": "23"
   },
@@ -20405,7 +20405,7 @@
     "slug": "trang-dai",
     "name_with_type": "Phường Trảng Dài",
     "path": "Trảng Dài, Đồng Nai",
-    "path_with_type": "Phường Trảng Dài, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Trảng Dài, Thành phố Đồng Nai",
     "code": "16151",
     "parent_code": "23"
   },
@@ -20695,7 +20695,7 @@
     "slug": "ho-nai",
     "name_with_type": "Phường Hố Nai",
     "path": "Hố Nai, Đồng Nai",
-    "path_with_type": "Phường Hố Nai, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Hố Nai, Thành phố Đồng Nai",
     "code": "16407",
     "parent_code": "23"
   },
@@ -20975,7 +20975,7 @@
     "slug": "long-hung",
     "name_with_type": "Phường Long Hưng",
     "path": "Long Hưng, Đồng Nai",
-    "path_with_type": "Phường Long Hưng, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Long Hưng, Thành phố Đồng Nai",
     "code": "16663",
     "parent_code": "23"
   },
@@ -21255,7 +21255,7 @@
     "slug": "dai-phuoc",
     "name_with_type": "Xã Đại Phước",
     "path": "Đại Phước, Đồng Nai",
-    "path_with_type": "Xã Đại Phước, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Đại Phước, Thành phố Đồng Nai",
     "code": "16919",
     "parent_code": "23"
   },
@@ -21515,7 +21515,7 @@
     "slug": "binh-phuoc",
     "name_with_type": "Phường Bình Phước",
     "path": "Bình Phước, Đồng Nai",
-    "path_with_type": "Phường Bình Phước, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Bình Phước, Thành phố Đồng Nai",
     "code": "17175",
     "parent_code": "23"
   },
@@ -21775,7 +21775,7 @@
     "slug": "dong-xoai",
     "name_with_type": "Phường Đồng Xoài",
     "path": "Đồng Xoài, Đồng Nai",
-    "path_with_type": "Phường Đồng Xoài, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Đồng Xoài, Thành phố Đồng Nai",
     "code": "17431",
     "parent_code": "23"
   },
@@ -22035,7 +22035,7 @@
     "slug": "bien-hoa",
     "name_with_type": "Phường Biên Hòa",
     "path": "Biên Hòa, Đồng Nai",
-    "path_with_type": "Phường Biên Hòa, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Biên Hòa, Thành phố Đồng Nai",
     "code": "17687",
     "parent_code": "23"
   },
@@ -22295,7 +22295,7 @@
     "slug": "tran-bien",
     "name_with_type": "Phường Trấn Biên",
     "path": "Trấn Biên, Đồng Nai",
-    "path_with_type": "Phường Trấn Biên, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Trấn Biên, Thành phố Đồng Nai",
     "code": "17943",
     "parent_code": "23"
   },
@@ -22545,7 +22545,7 @@
     "slug": "tam-hiep",
     "name_with_type": "Phường Tam Hiệp",
     "path": "Tam Hiệp, Đồng Nai",
-    "path_with_type": "Phường Tam Hiệp, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Tam Hiệp, Thành phố Đồng Nai",
     "code": "18199",
     "parent_code": "23"
   },
@@ -22795,7 +22795,7 @@
     "slug": "phuoc-binh",
     "name_with_type": "Phường Phước Bình",
     "path": "Phước Bình, Đồng Nai",
-    "path_with_type": "Phường Phước Bình, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Phước Bình, Thành phố Đồng Nai",
     "code": "18455",
     "parent_code": "23"
   },
@@ -23045,7 +23045,7 @@
     "slug": "phuoc-long",
     "name_with_type": "Phường Phước Long",
     "path": "Phước Long, Đồng Nai",
-    "path_with_type": "Phường Phước Long, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Phước Long, Thành phố Đồng Nai",
     "code": "18711",
     "parent_code": "23"
   },
@@ -23295,7 +23295,7 @@
     "slug": "binh-long",
     "name_with_type": "Phường Bình Long",
     "path": "Bình Long, Đồng Nai",
-    "path_with_type": "Phường Bình Long, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Bình Long, Thành phố Đồng Nai",
     "code": "18967",
     "parent_code": "23"
   },
@@ -23545,7 +23545,7 @@
     "slug": "an-loc",
     "name_with_type": "Phường An Lộc",
     "path": "An Lộc, Đồng Nai",
-    "path_with_type": "Phường An Lộc, Tỉnh Đồng Nai",
+    "path_with_type": "Phường An Lộc, Thành phố Đồng Nai",
     "code": "19223",
     "parent_code": "23"
   },
@@ -23795,7 +23795,7 @@
     "slug": "minh-hung",
     "name_with_type": "Phường Minh Hưng",
     "path": "Minh Hưng, Đồng Nai",
-    "path_with_type": "Phường Minh Hưng, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Minh Hưng, Thành phố Đồng Nai",
     "code": "19479",
     "parent_code": "23"
   },
@@ -24035,7 +24035,7 @@
     "slug": "chon-thanh",
     "name_with_type": "Phường Chơn Thành",
     "path": "Chơn Thành, Đồng Nai",
-    "path_with_type": "Phường Chơn Thành, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Chơn Thành, Thành phố Đồng Nai",
     "code": "19735",
     "parent_code": "23"
   },
@@ -24275,7 +24275,7 @@
     "slug": "nha-bich",
     "name_with_type": "Xã Nha Bích",
     "path": "Nha Bích, Đồng Nai",
-    "path_with_type": "Xã Nha Bích, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Nha Bích, Thành phố Đồng Nai",
     "code": "19991",
     "parent_code": "23"
   },
@@ -24515,7 +24515,7 @@
     "slug": "tan-quan",
     "name_with_type": "Xã Tân Quan",
     "path": "Tân Quan, Đồng Nai",
-    "path_with_type": "Xã Tân Quan, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Tân Quan, Thành phố Đồng Nai",
     "code": "20247",
     "parent_code": "23"
   },
@@ -24745,7 +24745,7 @@
     "slug": "tan-hung",
     "name_with_type": "Xã Tân Hưng",
     "path": "Tân Hưng, Đồng Nai",
-    "path_with_type": "Xã Tân Hưng, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Tân Hưng, Thành phố Đồng Nai",
     "code": "20503",
     "parent_code": "23"
   },
@@ -24971,11 +24971,11 @@
   },
   "20759": {
     "name": "Tân Khai",
-    "type": "xa",
+    "type": "phuong",
     "slug": "tan-khai",
-    "name_with_type": "Xã Tân Khai",
+    "name_with_type": "Phường Tân Khai",
     "path": "Tân Khai, Đồng Nai",
-    "path_with_type": "Xã Tân Khai, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Tân Khai, Thành phố Đồng Nai",
     "code": "20759",
     "parent_code": "23"
   },
@@ -25205,7 +25205,7 @@
     "slug": "minh-duc",
     "name_with_type": "Xã Minh Đức",
     "path": "Minh Đức, Đồng Nai",
-    "path_with_type": "Xã Minh Đức, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Minh Đức, Thành phố Đồng Nai",
     "code": "21015",
     "parent_code": "23"
   },
@@ -25435,7 +25435,7 @@
     "slug": "loc-thanh",
     "name_with_type": "Xã Lộc Thành",
     "path": "Lộc Thành, Đồng Nai",
-    "path_with_type": "Xã Lộc Thành, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Lộc Thành, Thành phố Đồng Nai",
     "code": "21271",
     "parent_code": "23"
   },
@@ -25661,11 +25661,11 @@
   },
   "21527": {
     "name": "Lộc Ninh",
-    "type": "xa",
+    "type": "phuong",
     "slug": "loc-ninh",
-    "name_with_type": "Xã Lộc Ninh",
+    "name_with_type": "Phường Lộc Ninh",
     "path": "Lộc Ninh, Đồng Nai",
-    "path_with_type": "Xã Lộc Ninh, Tỉnh Đồng Nai",
+    "path_with_type": "Phường Lộc Ninh, Thành phố Đồng Nai",
     "code": "21527",
     "parent_code": "23"
   },
@@ -25895,7 +25895,7 @@
     "slug": "loc-hung",
     "name_with_type": "Xã Lộc Hưng",
     "path": "Lộc Hưng, Đồng Nai",
-    "path_with_type": "Xã Lộc Hưng, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Lộc Hưng, Thành phố Đồng Nai",
     "code": "21783",
     "parent_code": "23"
   },
@@ -26125,7 +26125,7 @@
     "slug": "loc-tan",
     "name_with_type": "Xã Lộc Tấn",
     "path": "Lộc Tấn, Đồng Nai",
-    "path_with_type": "Xã Lộc Tấn, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Lộc Tấn, Thành phố Đồng Nai",
     "code": "22039",
     "parent_code": "23"
   },
@@ -26355,7 +26355,7 @@
     "slug": "loc-thanh",
     "name_with_type": "Xã Lộc Thạnh",
     "path": "Lộc Thạnh, Đồng Nai",
-    "path_with_type": "Xã Lộc Thạnh, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Lộc Thạnh, Thành phố Đồng Nai",
     "code": "22295",
     "parent_code": "23"
   },
@@ -26585,7 +26585,7 @@
     "slug": "loc-quang",
     "name_with_type": "Xã Lộc Quang",
     "path": "Lộc Quang, Đồng Nai",
-    "path_with_type": "Xã Lộc Quang, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Lộc Quang, Thành phố Đồng Nai",
     "code": "22551",
     "parent_code": "23"
   },
@@ -26815,7 +26815,7 @@
     "slug": "tan-tien",
     "name_with_type": "Xã Tân Tiến",
     "path": "Tân Tiến, Đồng Nai",
-    "path_with_type": "Xã Tân Tiến, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Tân Tiến, Thành phố Đồng Nai",
     "code": "22807",
     "parent_code": "23"
   },
@@ -27045,7 +27045,7 @@
     "slug": "thien-hung",
     "name_with_type": "Xã Thiện Hưng",
     "path": "Thiện Hưng, Đồng Nai",
-    "path_with_type": "Xã Thiện Hưng, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Thiện Hưng, Thành phố Đồng Nai",
     "code": "23063",
     "parent_code": "23"
   },
@@ -27275,7 +27275,7 @@
     "slug": "hung-phuoc",
     "name_with_type": "Xã Hưng Phước",
     "path": "Hưng Phước, Đồng Nai",
-    "path_with_type": "Xã Hưng Phước, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Hưng Phước, Thành phố Đồng Nai",
     "code": "23319",
     "parent_code": "23"
   },
@@ -27505,7 +27505,7 @@
     "slug": "phu-nghia",
     "name_with_type": "Xã Phú Nghĩa",
     "path": "Phú Nghĩa, Đồng Nai",
-    "path_with_type": "Xã Phú Nghĩa, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Phú Nghĩa, Thành phố Đồng Nai",
     "code": "23575",
     "parent_code": "23"
   },
@@ -27735,7 +27735,7 @@
     "slug": "da-kia",
     "name_with_type": "Xã Đa Kia",
     "path": "Đa Kia, Đồng Nai",
-    "path_with_type": "Xã Đa Kia, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Đa Kia, Thành phố Đồng Nai",
     "code": "23831",
     "parent_code": "23"
   },
@@ -27955,7 +27955,7 @@
     "slug": "binh-tan",
     "name_with_type": "Xã Bình Tân",
     "path": "Bình Tân, Đồng Nai",
-    "path_with_type": "Xã Bình Tân, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Bình Tân, Thành phố Đồng Nai",
     "code": "24087",
     "parent_code": "23"
   },
@@ -28165,7 +28165,7 @@
     "slug": "long-ha",
     "name_with_type": "Xã Long Hà",
     "path": "Long Hà, Đồng Nai",
-    "path_with_type": "Xã Long Hà, Tỉnh Đồng Nai",
+    "path_with_type": "Xã Long Hà, Thành phố Đồng Nai",
     "code": "24343",
     "parent_code": "23"
   },

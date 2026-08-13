@@ -86,8 +86,8 @@
   "23": {
     "name": "Đồng Nai",
     "slug": "dong-nai",
-    "type": "tinh",
-    "name_with_type": "Tỉnh Đồng Nai",
+    "type": "thanh-pho",
+    "name_with_type": "Thành phố Đồng Nai",
     "code": "23"
   },
   "24": {
